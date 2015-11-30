@@ -1,0 +1,116 @@
+/*comments in css are done with these characters */
+
+/* useful to know:
+something that is a class has a format of .className
+Classes are meant to be reused.
+Something that has an ID has a format of #IdName
+Id is used to set something apart from the rest giving it a unique styling.
+You can use Id formatting combined with class formatting to have everything in the
+class look one way, and then have an item in the class look unique */
+
+
+@CHARSET "ISO-8859-1";
+.bg1:root{
+/*my three background images, randomized thanks to javascript */
+background-image:url('images/bg1.jpg');
+}
+.bg2:root{
+background-image:url('images/bg2.jpg');
+}
+.bg3:root{
+background-image:url('images/bg3.jpg');
+}
+
+body{/*affects everyting in the <body> tag */
+color:#FFF;
+/*page font goes here*/
+}
+img.center{ /* unused, but would affect the <img> tag that has a class = "center" */
+display:block;
+margin-left:0px;
+float:left;
+}
+#date{ /* ID of date gets this formatting */
+text-align:center;
+color:#FFF;
+word-break: break-all;
+font-size:32pt;
+margin: 3%;
+}
+#testing{ /* I'm not even sure this is used on my current page, hence the 'testing */
+text-align:center;
+}
+form{
+text-align:center;
+}
+.searchContainer {/* container section that formats my search bars */
+text-align:center;
+margin: 15px 0;
+}
+.searchForm {
+display: inline-block;
+margin: 0 10px;
+}
+.searchBar::moz-placeholder { /* this uses some fancy mozilla thing for something. It's been awhile */
+transition: color 1s;
+}
+.searchBar {/*formats the search bars themselves */
+width: 20px;
+height: 20px;
+padding: 0;
+font-size: 10px;
+background-repeat: no-repeat;
+background-size: 20px 20px;
+background-position: right center;
+border-width: 1px;
+border-style: solid;
+outline: 0;
+opacity: 0.5;
+transition: all 1s;
+}
+.searchBar:hover {/*changes how the mouse looks when it hovers over the search bars */
+cursor: pointer;
+transition: all 0.5s;
+background-position: right center;
+opacity: 1;
+}
+.searchBar:focus {/* what happens when a user clicks any of the search bars */
+cursor: text;
+width: 100px;
+padding: 0 25px 0 5px;
+opacity: 1;
+}
+h1{/*section headers*/
+color:#FFF;
+font-weight:normal;
+transition:color 2s;
+}
+.calign{/* class that center aligns all of my elements */
+width:642px;
+margin: 0 auto;
+}
+.ditems{/*all boxes*/
+text-align:center;
+height:200px;
+width:200px;
+margin:2px;
+float:left;
+overflow:hidden;
+transition:height 0.5s;
+opacity:0.6;
+background-color:#1a1a1a;
+transition:background-color 2s;
+}
+.ditems:hover{/* what happens when a user hovers over one of the 6 centeral boxes */
+background-color:rgba(0, 0, 0, 1);
+opacity:1;
+transition: background-color 2s;
+}
+a{/* URL color. Sets them to white (#FFF) */
+color:#FFF;
+transition: color 2s;
+text-decoration:none;
+}
+a:hover{/* when user hovers over the URLS they turn to a nice blue */
+color:#00CDCD;
+}

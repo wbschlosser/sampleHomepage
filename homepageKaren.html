@@ -1,0 +1,73 @@
+<!-- Comments are entered here between the combination of symbols
+prepending and appending this green text.
+The <!DOCTYPE html> tells browsers what the document type is
+and the <html> begins where html and other goodies can be implemented -->
+<!DOCTYPE html>
+<html>
+<!-- the <head> tag displays text in the browser tab. Mine says 'welcome', but I could just as easily
+have it say 'Wes is awesome' -->
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- include CSS style sheet for the entire webpage here -->
+	<meta charset="ISO-8859-1">
+	<title>Welcome</title> <!-- text to display at the top of the browser window on the tab -->
+	<link rel="shortcut icon" href="images/favicon.png"> <!-- this would display a little image, like the 'G' for google tabs. But I don't have an image so it displays nothing -->
+</head>
+<!-- nearly all tags begin with <words> and end with </words>
+The above </head> ends the <head> section, allowing me to move on to the body section -->
+
+<!-- the body of the HTML document. Many things can go in here, and the bluk of your webpages will likely go here as well -->
+<body onload="getDate()"> <!-- This uses a javascript function to display the current date -->
+<script src="script.js"></script> <!-- the file that has both of my super fancy javascript functions -->
+<div class="calign"> <!-- this uses css to center align all items that are within its matching /div tag -->
+	<p id="date"/> <!-- this p(aragraph) tag has its own ending tag within it. Notice the / at the end -->
+	<section class="searchContainer"> <!-- Section tag dedicated to making sure my 3 search bars are all equally formatted -->
+		<form class="searchForm" method="get" action="https://www.startpage.com/do/search" target="_blank">
+			<input class="searchBar stpage" type="text" name="q" placeholder="Startpage" autofocus="autofocus" />
+		</form>
+		<form class="searchForm" method="get" action="https://en.wikipedia.org/w/index.php" target="_blank">
+			<input class="searchBar wikipedia" type="text" name="search" placeholder="wikipedia" />
+		</form>
+		<form class="searchForm" method="get" action="https://www.youtube.com/results" target="_blank">
+			<input class="searchBar youtube" type="text" name="search_query" placeholder="youtube" />
+		</form>
+	</section>
+	<div class="ditems"><!-- 6 squares that make up the bulk of the page, they use the css class named "ditems" to be consistently formatted-->
+		<h1>Enter title:</h1>
+		<a href="www.google.com.au">Sample URL text</a><br /> <!-- a tags are for urls. href is the url itself. These are followed by by text that the user can click on to go to the url -->
+	</div>
+	<div class="ditems"> <!-- my networking links. One for a social media network I occasionally develop for, another for my professional account, and 1 for my github -->
+		<h1>Networking:</h1>
+		<a href="https://social.mbuto.me/users/sign_in">Diaspora</a><br />
+		<a href="https://linkedin.com">Linkedin</a><br />
+		<a href="https://github.com">Github</a>
+	</div>
+	<div class="ditems">
+		<h1>Media:</h1> <!-- media stuff, email, pathfinder, youtube, dropbox -->
+		<a href="http://www.d20pfsrd.com">d20</a><br />
+		<a href="https://yahoo.com/mail">Yahoo</a><br />
+		<a href="https://youtube.com">Youtube</a><br />
+		<a href="https://www.dropbox.com/login">Dropbox</a>
+	</div>
+	<div class="ditems">
+		<h1>Docs:</h1> <!-- nerd stuff for my favorite linux distribution -->
+		<a href="https://wiki.archlinux.org/index.php/Dwb">dwb</a><br />
+		<a href="https://wiki.archlinux.org">Arch Wiki</a><br/>
+		<a href="https://www.archlinux.org">Arch home</a><br />
+		<a href="http://www.lagmonster.org/docs/vi2.html">Vi cheat sheet</a><br />
+	</div>
+	<div class="ditems">
+		<h1>Learning:</h1> <!-- some day I'll get around to doing these -->
+		<a href="www.math.com/practice/Algebra.html">Algebra</a><br />
+		<a href="http://www.onlinemathlearning.com/basic-trigonometry.html">Trigonometry</a><br />
+		<a href="https://www.khanacademy.org/math/geometry">Geometry</a><br />
+	</div>
+	<div class="ditems">
+		<h1>Project</h1> <!-- the friend I helped with that pet site has a blog and a home page of her own. -->
+		<a href="http://seusch.tumblr.com/">blog</a><br />
+		<a href="http://saraeusch.com">Home site</a<br />
+	</div>
+</div> <!-- end calign -->
+
+<!-- these two tags are generally the end of html pages. -->
+</body>
+</html>
